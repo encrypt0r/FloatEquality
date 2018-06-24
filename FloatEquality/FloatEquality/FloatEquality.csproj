@@ -10,10 +10,10 @@
     <PackageId>FloatEquality</PackageId>
     <PackageVersion>1.0.0.0</PackageVersion>
     <Authors>Muhammad Azeez</Authors>
-    <PackageLicenseUrl>https://github.com/encrypt0r/FloatsCanNeverBeEqual/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/encrypt0r/FloatsCanNeverBeEqual</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/encrypt0r/FloatEquality/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/encrypt0r/FloatEquality</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
-    <RepositoryUrl>https://github.com/encrypt0r/FloatsCanNeverBeEqual</RepositoryUrl>
+    <RepositoryUrl>https://github.com/encrypt0r/FloatEquality</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Description>Due to the way they are stored, two floating-points numbers can have unexpected impercievable rounding errors and so may not be equal even if they seem so.</Description>
     <PackageReleaseNotes>Initial Version</PackageReleaseNotes>
