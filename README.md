@@ -1,4 +1,20 @@
-This analyzer makes sure you will never compare two `Double` or `Float` numbers directly for equality as it will lead to errors because they will basically never be equal. Currently it doesn't provide any fixes because I am not sure if it's a good idea, as the implementation usually depends on the context.
+This analyzer makes sure you will never compare two `Double` or `Float` numbers directly for equality as it could lead to errors because floating-point numbers can have imperceivable rounding errors. Currently it doesn't provide any fixes because I am not sure if it's a good idea, as the implementation usually depends on the context.
+
+## Example
+The analyzer will warn you about cases like this:
+```csharp
+float x = 0.3f;
+float y = 0.3f;
+
+if (x == y)
+    Console.WriteLine("They are equal!");
+else
+    Console.WriteLine("They are NOT equal!");
+```
+
+## How to use
+
+Add the [nuget package](https://www.nuget.org/packages/FloatEquality) to your project and the analyzer will be enabled automatically. I'll try to create a Visual Studio extention as well.
 
 ## More Info
  - [Comparing floating point numbers - StackOverFlow](https://stackoverflow.com/questions/3874627/floating-point-comparison-functions-for-c-sharp)
